@@ -1,0 +1,207 @@
+/* ==========================
+   DARK MODE
+========================== */
+
+body.dark-mode {
+    background: #0f172a;
+    color: #f8fafc;
+}
+
+/* Header */
+
+body.dark-mode header {
+    background: rgba(15, 23, 42, .95);
+    border-bottom: 1px solid #334155;
+}
+
+/* Logo */
+
+body.dark-mode .logo {
+    color: #f8fafc;
+}
+
+/* Navigation */
+
+body.dark-mode .nav-links a {
+    color: #e2e8f0;
+}
+
+body.dark-mode .nav-links a:hover {
+    color: #60a5fa;
+}
+
+/* Hero */
+
+body.dark-mode .hero-text,
+body.dark-mode .info-box span,
+body.dark-mode .section-title p,
+body.dark-mode .stat-card p,
+body.dark-mode .feature-card p,
+body.dark-mode .country-card p {
+    color: #cbd5e1;
+}
+
+/* Cards */
+
+body.dark-mode .info-box,
+body.dark-mode .stat-card,
+body.dark-mode .feature-card,
+body.dark-mode .country-card {
+    background: #1e293b;
+    color: #f8fafc;
+    box-shadow: none;
+}
+
+/* Buttons */
+
+body.dark-mode .btn-secondary {
+    background: transparent;
+    border: 2px solid #60a5fa;
+    color: #60a5fa;
+}
+
+body.dark-mode .btn-secondary:hover {
+    background: #60a5fa;
+    color: #fff;
+}
+
+/* CTA */
+
+body.dark-mode .cta {
+    background: linear-gradient(135deg, #1d4ed8, #4f46e5);
+}
+
+/* Footer */
+
+body.dark-mode footer {
+    background: #020617;
+}
+
+/* Countries Page */
+
+body.dark-mode .search-box,
+body.dark-mode #region-filter{
+
+    background:#1e293b;
+
+    color:white;
+
+    box-shadow:none;
+}
+
+body.dark-mode .search-box input{
+
+    color:white;
+}
+
+body.dark-mode .search-box input::placeholder{
+
+    color:#94a3b8;
+}
+
+body.dark-mode .api-country-card {
+    background: #1e293b;
+    box-shadow: none;
+}
+
+body.dark-mode .api-country-image {
+    background: #0f172a;
+}
+
+body.dark-mode .api-country-content p,
+body.dark-mode .empty-state p,
+body.dark-mode .error-state p {
+    color: #cbd5e1;
+}
+
+body.dark-mode .api-country-content strong {
+    color: #f8fafc;
+}
+
+/* ==========================
+   COUNTRY DETAIL DARK MODE
+========================== */
+
+body.dark-mode .country-detail {
+    background: #111827;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+body.dark-mode .country-detail-content h1,
+body.dark-mode .country-info-item strong {
+    color: #f8fafc;
+}
+
+body.dark-mode .country-info-item {
+    background: #172033;
+    border-color: #263449;
+}
+
+body.dark-mode .country-info-item span {
+    color: #94a3b8;
+}
+
+body.dark-mode .country-info-item i {
+    background: rgba(59, 130, 246, 0.16);
+    color: #60a5fa;
+}
+
+body.dark-mode .country-detail-image {
+    background: #172033;
+}
+
+/* ==========================
+   WEATHER PAGE - DARK MODE
+========================== */
+
+body.dark-mode .weather-input-group input {
+    background: #111827;
+    color: #f8fafc;
+    border-color: #334155;
+}
+
+body.dark-mode .weather-input-group input::placeholder {
+    color: #94a3b8;
+}
+
+body.dark-mode .weather-input-group i {
+    color: #94a3b8;
+}
+
+body.dark-mode .weather-message,
+body.dark-mode .weather-error,
+body.dark-mode .weather-card {
+    background: #111827;
+    border-color: #334155;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+body.dark-mode .weather-message h2,
+body.dark-mode .weather-error h2,
+body.dark-mode .weather-card h2 {
+    color: #f8fafc;
+}
+
+body.dark-mode .weather-message p,
+body.dark-mode .weather-error p,
+body.dark-mode .weather-country,
+body.dark-mode #weather-description {
+    color: #94a3b8;
+}
+
+body.dark-mode .weather-detail {
+    background: #1e293b;
+}
+
+body.dark-mode .weather-detail span {
+    color: #94a3b8;
+}
+
+body.dark-mode .weather-detail strong {
+    color: #f8fafc;
+}
+
+body.dark-mode .weather-icon {
+    background: rgba(37, 99, 235, 0.18);
+}
