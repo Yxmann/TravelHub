@@ -51,7 +51,7 @@
         position: relative;
     }
 
-    /* Hem ana sayfadaki hem diğer sayfalardaki menü */
+    /* Ana sayfa ve diğer sayfalardaki mobil menü */
     .nav-links,
     .nav-menu {
         position: absolute;
@@ -102,6 +102,7 @@
         display: block;
         width: 100%;
         padding: 8px 20px;
+        text-align: center;
     }
 
     body.dark-mode .nav-links,
@@ -110,7 +111,9 @@
         border-bottom-color: #334155;
     }
 
-    .menu-btn {
+    /* Hem eski hem yeni hamburger sınıfını destekler */
+    .menu-btn,
+    .menu-toggle {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -214,10 +217,17 @@
         font-size: 1.35rem;
     }
 
+    /* Hem eski hem yeni buton sınıflarını destekler */
     .theme-btn,
-    .menu-btn {
+    .theme-toggle,
+    .menu-btn,
+    .menu-toggle {
         width: 40px;
         height: 40px;
+    }
+
+    .nav-actions {
+        gap: 8px;
     }
 
     .hero {
@@ -332,6 +342,7 @@
     }
 }
 
+
 @media (max-width: 600px) {
 
     .country-detail-section {
@@ -373,69 +384,138 @@
     }
 }
 
+
 /* ==========================
    ABOUT MOBILE FIX
 ========================== */
 
-@media (max-width:768px){
+@media (max-width: 768px) {
 
-    .about-container{
-
-        grid-template-columns:1fr;
-
-        gap:50px;
+    .about-section {
+        padding: 65px 0 80px;
     }
 
-    .about-content{
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
 
-        text-align:center;
+    .about-content {
+        text-align: center;
     }
 
     .about-content h2,
-    .about-content p{
-
-        max-width:100%;
+    .about-content > p {
+        max-width: 100%;
     }
 
-    .about-features{
-
-        max-width:100%;
+    .about-features {
+        max-width: 100%;
     }
 
-    .about-feature{
-
-        text-align:left;
+    .about-feature {
+        text-align: left;
     }
 
-    .about-visual{
-    min-height:0;
+    .about-visual {
+        min-height: 0;
 
-    display:flex;
-    flex-direction:column;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-    gap:25px;
+        gap: 25px;
+    }
+
+    .about-circle {
+        width: 240px;
+        height: 240px;
+
+        margin: 0 auto;
+
+        font-size: 90px;
+    }
+
+    .about-small-card {
+        position: static;
+
+        width: 100%;
+        max-width: 320px;
+
+        margin: 0 auto;
+    }
+
+    .about-values {
+        padding: 75px 0;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
 }
-    .about-circle{
 
-        width:240px;
-        height:240px;
 
-        font-size:90px;
+/* ==========================
+   ABOUT SMALL MOBILE FIX
+========================== */
+
+@media (max-width: 480px) {
+
+    .about-section {
+        padding: 50px 0 65px;
     }
 
-    .about-small-card{
-
-        position:static;
-
-        width:100%;
-        max-width:340px;
-
-        margin:0 auto;
+    .about-container {
+        width: 90%;
+        gap: 40px;
     }
 
-    .values-grid{
-
-        grid-template-columns:1fr;
+    .about-content h2 {
+        font-size: 2rem;
     }
 
+    .about-content > p {
+        font-size: 0.95rem;
+        line-height: 1.75;
+    }
+
+    .about-feature {
+        padding: 18px;
+        gap: 14px;
+    }
+
+    .about-feature i {
+        width: 48px;
+        height: 48px;
+
+        font-size: 19px;
+    }
+
+    .about-feature h3 {
+        font-size: 1rem;
+    }
+
+    .about-feature p {
+        font-size: 0.9rem;
+    }
+
+    .about-circle {
+        width: 210px;
+        height: 210px;
+
+        font-size: 78px;
+    }
+
+    .about-small-card {
+        max-width: 290px;
+        padding: 16px;
+    }
+
+    .about-values {
+        padding: 60px 0;
+    }
+
+    .value-card {
+        padding: 30px 22px;
+    }
 }
