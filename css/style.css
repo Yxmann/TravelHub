@@ -3322,3 +3322,21 @@ footer hr{
     margin: 0;
     max-width: 620px;
 }
+
+/* ==========================
+   MOBILE HEADER SCROLL
+========================== */
+
+header,
+.header,
+.navbar {
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    header.header-hidden,
+    .header.header-hidden,
+    .navbar.header-hidden {
+        transform: translateY(-110%);
+    }
+}
