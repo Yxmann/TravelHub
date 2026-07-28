@@ -166,10 +166,19 @@ function renderFavorites() {
 }
 
 /* ==========================
-   REMOVE FROM FAVORITES PAGE
+   FAVORITES PAGE ACTIONS
 ========================== */
 
 favoritesContainer?.addEventListener("click", event => {
+    const detailsButton = event.target.closest(".details-btn");
+
+    if (detailsButton) {
+        const countryCode = detailsButton.dataset.code;
+
+        window.location.href = `country.html?code=${countryCode}`;
+        return;
+    }
+
     const favoriteButton = event.target.closest(".favorite-btn");
 
     if (!favoriteButton) {
