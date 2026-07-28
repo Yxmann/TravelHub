@@ -2,12 +2,24 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Ülke Detayı | TravelHub</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
 
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
@@ -37,28 +49,34 @@
 
             <nav class="nav-menu" id="nav-menu">
                 <a href="../index.html">Ana Sayfa</a>
-                <a href="countries.html">Ülkeler</a>
+                <a href="countries.html" class="active">Ülkeler</a>
                 <a href="weather.html">Hava Durumu</a>
                 <a href="favorites.html">Favoriler</a>
                 <a href="about.html">Hakkımızda</a>
             </nav>
 
             <div class="nav-actions">
+
                 <button
-                    class="theme-toggle"
+                    class="theme-toggle theme-btn"
                     id="theme-toggle"
+                    type="button"
                     aria-label="Tema değiştir"
                 >
                     <i class="fa-solid fa-moon"></i>
                 </button>
 
                 <button
-                    class="menu-toggle"
+                    class="menu-toggle menu-btn"
                     id="menu-toggle"
+                    type="button"
                     aria-label="Menüyü aç"
+                    aria-expanded="false"
+                    aria-controls="nav-menu"
                 >
                     <i class="fa-solid fa-bars"></i>
                 </button>
+
             </div>
 
         </div>
@@ -89,8 +107,9 @@
     <footer class="footer">
         <div class="container footer-content">
 
-            <div>
-                <a href="../index.html" class="logo footer-logo">
+            <div class="footer-brand">
+
+                <a href="../index.html" class="logo">
                     <i class="fa-solid fa-earth-americas"></i>
                     <span>TravelHub</span>
                 </a>
@@ -98,6 +117,7 @@
                 <p>
                     Dünyayı keşfetmenin modern ve kolay yolu.
                 </p>
+
             </div>
 
             <div class="footer-links">
