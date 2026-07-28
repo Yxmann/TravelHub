@@ -850,8 +850,10 @@ footer hr{
 
 .empty-state,
 .error-state {
-    text-align: center;
+    width: 100%;
     max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .empty-state i,
